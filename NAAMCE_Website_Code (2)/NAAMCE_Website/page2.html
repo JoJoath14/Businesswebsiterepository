@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A student website concept for NAAMCE, the National Advanced Air Mobility Center of Excellence.">
+  <title>NAAMCE | Products & Services</title>
+  <!-- Author: [Non-computing teammate name — replace before submission] | Date: November 2, 2026 -->
+  <!-- Student concept: offerings, prices, founder story, and contact details are fictional. -->
+  <style>
+* { box-sizing: border-box; }
+:root { --navy:#0b2338; --teal:#076b65; --lime:#d6f583; --paper:#f5f5ef; }
+body { margin:0; font-family:Arial,Helvetica,sans-serif; background:var(--paper); color:var(--navy); line-height:1.65; }
+a { color:inherit; text-underline-offset:4px; }
+a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,summary:focus-visible { outline:3px solid #bd6c12; outline-offset:4px; }
+.skip { position:absolute; left:12px; top:-70px; padding:10px; background:white; z-index:5; }.skip:focus { top:10px; }
+header { background:white; border-bottom:1px solid #d8dfdc; }
+nav { max-width:1160px; margin:auto; display:flex; justify-content:space-between; align-items:center; gap:24px; padding:22px 28px; flex-wrap:wrap; }
+.brand { font-size:26px; font-weight:900; text-decoration:none; letter-spacing:-1px; }.brand span { color:var(--teal); }
+.links { display:flex; gap:24px; flex-wrap:wrap; }.links a { text-decoration:none; font-size:14px; font-weight:bold; }.links a[aria-current] { color:var(--teal); text-decoration:underline; }
+main { max-width:1160px; margin:auto; padding:0 28px 60px; }
+.hero { display:grid; grid-template-columns:1.05fr 1fr; align-items:center; gap:45px; padding:65px 0 50px; }
+.eyebrow { font-size:12px; text-transform:uppercase; letter-spacing:2px; font-weight:bold; color:var(--teal); }
+h1 { font-size:clamp(38px,5.7vw,70px); line-height:1.04; letter-spacing:-2px; margin:16px 0 22px; }
+h2 { font-size:clamp(26px,3vw,36px); line-height:1.2; letter-spacing:-1px; margin:8px 0 18px; }
+h3 { font-size:21px; line-height:1.3; }p { margin:0 0 18px; }.intro { font-size:18px; max-width:620px; color:#405563; }
+.hero img { display:block; width:100%; border-radius:6px; }.caption { font-size:12px; color:#526571; margin-top:8px; }
+.button { display:inline-block; padding:13px 22px; background:var(--teal); color:white; border:0; border-radius:4px; text-decoration:none; font:700 14px Arial; cursor:pointer; }.button:hover { background:#084d49; }.secondary { background:transparent; border:1px solid var(--teal); color:var(--teal); }.secondary:hover { color:white; }
+.actions { display:flex; flex-wrap:wrap; gap:12px; margin-top:26px; }
+.strip { display:flex; flex-wrap:wrap; gap:20px; justify-content:space-between; border-top:1px solid #c9d4d1; border-bottom:1px solid #c9d4d1; padding:18px 0; font-size:13px; font-weight:bold; }
+section { margin-top:52px; }.grid { display:grid; grid-template-columns:repeat(3,1fr); gap:22px; }.card { background:white; padding:27px; border:1px solid #d9e0dc; border-radius:5px; }.number { color:var(--teal); font-size:13px; font-weight:bold; letter-spacing:2px; }.card p { color:#405563; }.card h3 { margin:14px 0; }
+.band { background:var(--navy); color:white; padding:35px; border-radius:5px; }.band .eyebrow { color:var(--lime); }.band p { max-width:760px; }.band .button { background:var(--lime); color:var(--navy); }
+.page-heading { padding-top:50px; max-width:820px; }.page-heading h1 { font-size:clamp(38px,5vw,58px); }
+.price { display:block; font-size:28px; font-weight:bold; margin:20px 0 5px; }.fine { font-size:13px; color:#526571; }.notice { padding:13px 18px; background:#e5eddf; border-left:4px solid var(--teal); font-size:13px; }
+.steps { counter-reset:step; list-style:none; padding:0; }.steps li { background:#e8ede6; padding:25px; }.steps strong { display:block; margin-bottom:8px; }
+.two { display:grid; grid-template-columns:1fr 1fr; gap:35px; }.avatar { display:flex; align-items:center; justify-content:center; width:60px; height:60px; background:#e5eddf; color:var(--teal); font-weight:bold; border-radius:50%; }
+label { display:block; font-weight:bold; font-size:14px; margin:15px 0 6px; }input,textarea { width:100%; border:1px solid #9eada9; padding:12px; border-radius:3px; font:inherit; background:white; }textarea { resize:vertical; }form .button { margin-top:18px; }
+details { border-bottom:1px solid #c9d4d1; padding:17px 0; }summary { cursor:pointer; font-weight:bold; }details p { margin:12px 0 0; }
+footer { border-top:1px solid #c9d4d1; padding:25px 28px; font-size:12px; color:#526571; }footer p { max-width:1104px; margin:0 auto; }
+@media(max-width:760px) { .hero,.two { grid-template-columns:1fr; }.hero { padding-top:38px; gap:25px; }.grid { grid-template-columns:1fr; }nav,main { padding-left:20px; padding-right:20px; }.links { gap:16px; }.band { padding:25px; }h1 { letter-spacing:-1px; } }
+@media(prefers-reduced-motion:no-preference) { html { scroll-behavior:smooth; } }
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to main content</a>
+<header><nav aria-label="Main navigation"><a class="brand" href="index.html">NAAMCE<span> ↗</span></a><div class="links"><a href="index.html">Home</a><a href="page2.html" aria-current="page">Products & Services</a><a href="page3.html">About & Contact</a></div></nav></header>
+<main id="main">
+<div class="page-heading"><p class="eyebrow">Products & services</p><h1>Find your flight path.</h1><p class="intro">Three ways to explore, learn, and connect with the world of advanced air mobility.</p></div>
+<p class="notice">Class-project catalog: all experiences, prices, and promotions below are fictional examples, not actual NAAMCE offers.</p>
+<section aria-label="Service catalog"><div class="grid"><article class="card" id="discovery"><span class="number">01 / CONCEPT OFFERING</span><h3>Air Mobility Discovery Day</h3><p>Explore aircraft concepts, join a guided introduction, and ask your biggest aviation questions.</p><span class="price">$25</span><p class="fine">Per person · fictional price</p><a href="page3.html#contact">Ask about this experience →</a></article><article class="card" id="workshop"><span class="number">02 / CONCEPT OFFERING</span><h3>Future Flight Workshop</h3><p>Sketch a concept aircraft and explore how design choices shape the way it flies.</p><span class="price">$60</span><p class="fine">Per person · fictional price</p><a href="page3.html#contact">Ask about this experience →</a></article><article class="card" id="network"><span class="number">03 / CONCEPT OFFERING</span><h3>Innovator Connection Pass</h3><p>Join a themed meetup for students and aviation enthusiasts to exchange ideas.</p><span class="price">$15</span><p class="fine">Per event · fictional price</p><a href="page3.html#contact">Ask about this experience →</a></article></div></section>
+<section><p class="eyebrow">How it works</p><h2>From curiosity to connection.</h2><ol class="grid steps"><li><strong>1. Choose your experience</strong>Browse the fictional catalog and find the option that fits your interests.</li><li><strong>2. Start a conversation</strong>Use the demo inquiry form to practice telling us what you want to explore.</li><li><strong>3. Imagine your next step</strong>In this project scenario, our team would help plan your visit or workshop.</li></ol></section>
+<section class="band"><p class="eyebrow">Featured experience / fictional promotion</p><h2>Bring a big idea.<br>Leave with a new perspective.</h2><p>Try the Future Flight Workshop. Our made-up student promotion takes 20% off the fictional $60 price: <strong>$48 with code TAKEOFF20.</strong></p><a class="button" href="page3.html#contact">Ask About the Workshop ↗</a></section>
+<section><img src="assets/air-mobility.svg" width="680" height="530" style="width:100%;max-width:380px;height:auto" alt="Concept aircraft illustration representing future aviation experiences"></section>
+</main>
+<footer><p>NAAMCE · National Advanced Air Mobility Center of Excellence<br>Student website concept. Fictional services, pricing, founders, and contact information; not an official NAAMCE website.</p></footer>
+</body>
+</html>
