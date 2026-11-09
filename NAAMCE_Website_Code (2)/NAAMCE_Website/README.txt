@@ -6,6 +6,15 @@ OPEN THE WEBSITE
 3. Edit the HTML files using VS Code or a plain-text editor.
 Keep assets beside the HTML files so the illustration loads. No installation needed.
 
+RUN WITH NPM
+From the repository root, run:
+1. npm install
+2. npm run dev
+3. Open http://localhost:3000
+Node.js is required. The site has no external package dependencies; npm run dev
+starts a small local server for the files in this folder. In PowerShell, if
+script execution policy blocks npm, use npm.cmd install and npm.cmd run dev.
+
 FILES
 index.html — Home
 page2.html — Products & Services
